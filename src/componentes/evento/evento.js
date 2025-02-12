@@ -73,7 +73,7 @@ export default function TemplateEvento({ eventId, eventName, date, host, manager
     };
 
     const handleGerarQRCode = () => {
-        const url = `https://main.d3ox2o8vvrjgn9.amplifyapp.com/certificacao?eventId=${eventId}`;
+        const url = `https://main.d1dubmeqg10ig6.amplifyapp.com/certificacao?eventId=${eventId}`;
         setQrCodeValue(url);
         setQtCode(true)
     };
