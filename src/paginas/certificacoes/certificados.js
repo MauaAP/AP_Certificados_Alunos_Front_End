@@ -11,7 +11,7 @@ export default function Certificacao() {
     const eventId = urlParams.get('eventId');
 
     useEffect(() => {
-        axios.get(`https://maua-ap-back-end.onrender.com/api/events/${eventId}`)
+        axios.get(`https://ap-certificados-alunos-back-end.onrender.com/api/events/${eventId}`)
         .then(response => {
             setEvento(response.data);
         })
@@ -24,7 +24,7 @@ export default function Certificacao() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('https://maua-ap-back-end.onrender.com/api/users-list');
+                const response = await axios.get('https://ap-certificados-alunos-back-end.onrender.com/api/users-list');
                 setLista(response.data);
             } catch (error) {
                 console.error('Erro ao buscar usuários:', error);

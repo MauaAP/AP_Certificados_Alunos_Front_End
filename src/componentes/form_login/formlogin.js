@@ -50,7 +50,7 @@ export default function FormsLogin() {
     const notifyError = (message) => toast.error(message);
   
     try {
-      const response = await axios.post('https://maua-ap-back-end.onrender.com/api/auth-user', {
+      const response = await axios.post('https://ap-certificados-alunos-back-end.onrender.com/api/auth-user', {
         email: email,
         password: password
       });
@@ -82,7 +82,7 @@ export default function FormsLogin() {
   return (
     <section className="absolute top-0 right-0 w-1/2 min-h-screen flex flex-col items-center justify-center bg-white max-md:w-full max-md:bg-transparent">
       <form className="formulario p-8 max-md:shadow-lg max-md:bg-white max-md:rounded-xl" onSubmit={handleSubmit}>
-        <h2 className="font-bold text-xl">Portal do Professor</h2>
+        <h2 className="font-bold text-xl">Portal do Aluno</h2>
         <label htmlFor='email'>Email {emailError && <span style={{ color: 'red', fontSize: '8'}}>Email inválido</span>}</label>
         <input 
           type='email' 

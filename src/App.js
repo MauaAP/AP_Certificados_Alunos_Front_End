@@ -27,26 +27,26 @@ import Certificacao from "./paginas/certificacoes/certificados";
 import EndPage from "./paginas/certificacoes/finalizacao";
 
 const itensMenu = [
-  { nome: "Meu Perfil", rota: "/perfil" },
+  // { nome: "Meu Perfil", rota: "/perfil" },
   { nome: "Certificados", rota: "/paginaInicial" },
-  { nome: "Relatório", rota: "/relatoriosProf" },
+  // { nome: "Relatório", rota: "/relatoriosProf" },
   { nome: "Lista de Eventos", rota: "/eventos"},
   { nome: "Sair", rota: "/" }
 ];
 
 const itensMenuAdm = [
-  { nome: "Meu Perfil", rota: "/perfilADM" },
+  // { nome: "Meu Perfil", rota: "/perfilADM" },
   { nome: "Certificados", rota: "/paginaInicialADM" },
-  { nome: "Relatórios", rota: "/relatorios" },
+  // { nome: "Relatórios", rota: "/relatorios" },
   { nome: "Lista de Usuários", rota: "/listaProfessores" },
   { nome: "Lista de Eventos", rota: "/listaEventos" },
   { nome: "Sair", rota: "/" }
 ];
 
 const itensMenuMod = [
-  { nome: "Meu Perfil", rota: "/perfilMod" },
+  // { nome: "Meu Perfil", rota: "/perfilMod" },
   { nome: "Certificados", rota: "/paginaInicialMod" },
-  { nome: "Relatório", rota: "/relatoriosMod" },
+  // { nome: "Relatório", rota: "/relatoriosMod" },
   { nome: "Lista de Eventos", rota: "/listaEventosMod" },
   { nome: "Sair", rota: "/" }
 ];

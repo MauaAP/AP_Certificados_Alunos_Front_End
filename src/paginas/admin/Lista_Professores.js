@@ -13,7 +13,7 @@ export default function ListaProfessores ({itensMenu}) {
 
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('https://maua-ap-back-end.onrender.com/api/users', {
+                const response = await axios.get('https://ap-certificados-alunos-back-end.onrender.com/api/users', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`
                     }

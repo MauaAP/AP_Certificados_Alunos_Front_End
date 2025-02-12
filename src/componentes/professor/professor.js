@@ -37,7 +37,7 @@ export default function TemplateProfessor({ professor, cpf, phone, email, role, 
 
     const notiInativar = () => {
         toast.dismiss();
-        axios.put('https://maua-ap-back-end.onrender.com/api/update-status', {
+        axios.put('https://ap-certificados-alunos-back-end.onrender.com/api/update-status', {
             id: editedData.id,
             status: editedData.status === 'ACTIVE' ? 'INACTIVE' : 'ACTIVE'
         }, {

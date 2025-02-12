@@ -11,7 +11,7 @@ export default function TemplateCertificado ({ certificadoId, evento, professor,
     
     const handleDelete = async () => {
         try {
-            await axios.delete(`https://maua-ap-back-end.onrender.com/api/presence/${certificadoId}`, {
+            await axios.delete(`https://ap-certificados-alunos-back-end.onrender.com/api/presence/${certificadoId}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -30,7 +30,7 @@ export default function TemplateCertificado ({ certificadoId, evento, professor,
 
     const handleDownload = async () => {
         try {
-            const response = await axios.get(`https://maua-ap-back-end.onrender.com/api/create-certificate/${certificadoId}`, {
+            const response = await axios.get(`https://ap-certificados-alunos-back-end.onrender.com/api/create-certificate/${certificadoId}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`
                 }

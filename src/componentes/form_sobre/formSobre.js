@@ -57,7 +57,7 @@ export default function FormSobre({ nomeP, emailP, cpfP, phone }) {
         if (filledFields) {
             notifySuccess();
             // manda pro banco
-            await axios.put('https://maua-ap-back-end.onrender.com/api/update-user', formData, {
+            await axios.put('https://ap-certificados-alunos-back-end.onrender.com/api/update-user', formData, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
