@@ -36,7 +36,13 @@ export default function TemplateCertificado ({ certificadoId, evento, professor,
                 }
             });
             const url = response.data.certificateUrl;
-            window.open(url, '_blank');  // Abre a URL em uma nova guia
+            // window.open(url, '_blank');  // Abre a URL em uma nova guia
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'certificado.pdf');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         } catch (error) {
             console.error("Erro ao fazer o download do certificado:", error);
             notierror("Erro ao fazer o download!");
