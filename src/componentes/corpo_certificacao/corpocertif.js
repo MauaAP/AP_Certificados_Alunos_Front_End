@@ -113,7 +113,7 @@ export default function CorpoCerti({ lista, eventId }) {
             </div>
             <br />
             <h2 className="text-center text-3xl">Usuário Externo</h2>
-            <div className="flex gap-4 items-center justify-center">
+            <div className="flex flex-col gap-4 items-center justify-center">
                 <input onChange={(e) => setName(e.target.value)} type="text" className="shadow-sm border-2 border-orange-900 rounded-lg p-2" placeholder="insira seu nome..."/>
                 <input onChange={(e) => setEmail(e.target.value)} type="email" className="shadow-sm border-2 border-orange-900 rounded-lg p-2" placeholder="insira seu email..."/>
             </div>
